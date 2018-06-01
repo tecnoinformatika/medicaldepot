@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<!-- head-->
+
+<head>
+    <!-- meta-->
+    <title>Baako - Multipurpose HTML Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mist Carousel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="fonts/mfont.css">
+    <link rel="stylesheet" href="css/components/project.css">
+    <link rel="stylesheet" href="css/components/mistCarousel.css">
+    <!-- font Awesome-4.6.3 css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+</head>
+<!-- body-->
+<body class="overlay-wrapped contact-page">
+    <!-- Start: overlay-->
+    <div class="mist-overlay"></div>
+    <!-- End: overlay-->
+    <!-- Start: section-->
+    <section class="main-section">
+        <div class="contact-page__inner">
+            <div class="contact-page__title">Contact</div>
+            <div class="contact-page__content">
+                <form class="contact-form">
+                    <div class="form-element">
+                        <input type="text" placeholder="Name" required id="contact-name">
+                        <label for="contact-name">Name</label>
+                    </div>
+                    <div class="form-element">
+                        <input type="email" placeholder="Email" required id="contact-email">
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div class="form-element">
+                        <textarea rows="6" placeholder="Text" required id="contact-text"></textarea>
+                        <label for="contact-text">Text</label>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit">SUBMIT<span class="fa fa-angle-right"></span></button>
+                    </div>
+                </form>
+            </div>
+            <!-- Start: logo-->
+            <a class="main-section__logo mist-link" href="index-classic & corporate.html"><img src="images/logo-2.png"></a>
+            <!-- End: logo-->
+            <!-- Start: links-->
+            <ul class="main-section__menus">
+                <li><a class="mist-link" href="carousel_about.html">about me</a></li>
+                <li><a class="mist-link" href="carousel_blog.html">blog</a></li>
+                <li><a class="mist-link" href="carousel_contact.html">contact</a></li>
+            </ul>
+            <!-- End: links-->
+    </section>
+    <!-- End: section -->
+</body>
+<!-- End: body-->
+<!-- scripts-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/components/mistCarousel.js"></script>
+    <script src="js/components/slider-2.js"></script>
+    <!-- scripts-->
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+
+</html>
