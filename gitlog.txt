@@ -1,0 +1,29 @@
+commit f5bcec2460d5cf8e690230496495f68b63104cf5
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Wed Jun 6 15:10:05 2018 +0000
+
+    prueba
+
+commit b754879f8443975ea5497e436d1add4ab1d2627e
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Wed Jun 6 14:30:37 2018 +0000
+
+    images slider ok
+
+commit 46031fc028a09ca6eda1cb8032b5d851cb26966f
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Tue Jun 5 13:46:40 2018 +0000
+
+    modal design login
+
+commit 25e077ee4baa48c5429899f59a2f4618cbd7675f
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Fri Jun 1 22:54:51 2018 +0000
+
+    Index separaado por layouts
+
+commit 4021b0b5c6b299fec4f47cfed7d47a3a3c426b72
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Fri Jun 1 15:24:44 2018 +0000
+
+    initial commit
