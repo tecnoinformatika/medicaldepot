@@ -43,7 +43,7 @@
                                 </ul>
                              @endguest
                             </li>
-                            <li class="cart-dropdown"><a class="padd-0" href=""><i class="fa fa-shopping-cart"></i> 8</a>
+                            <li class="cart-dropdown"><a class="padd-0" href="{{ route('shopCart')}}"><i class="fa fa-shopping-cart"></i> 8</a>
                                 <div class="dropdown-content">
                                     <div class="item-box">
                                         <div class="image-info">
@@ -85,7 +85,7 @@
                                         <p>SubTotal: $955</p>
                                     </div>
                                     <div class="text-center">
-                                        <a href="" class="btn cart-btn blue">View Cart</a>
+                                        <a href="{{ route('shopCart')}}" class="btn cart-btn blue">View Cart</a>
                                         <a href="" class="btn cart-btn border">Check Out</a>
                                     </div>
                                 </div>

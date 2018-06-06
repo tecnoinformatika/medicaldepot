@@ -20,4 +20,12 @@ class navController extends Controller
         return view('shopProducts');
     }
     
+    public function shopCart(){
+    
+        return view('shopCart');
+    }
+    public function registerUSer(){
+        return view('registerAccount');
+        
+    }
 }

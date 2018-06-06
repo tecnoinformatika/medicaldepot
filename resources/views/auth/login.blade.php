@@ -44,7 +44,9 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign Up">
+                <a class="btn btn-primary btn-lg btn-block" href="{{ route('register') }}">
+                            {{ __('Sign Up') }}
+                         </a>
             </div>
         </div>
     </div>

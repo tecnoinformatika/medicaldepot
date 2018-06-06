@@ -117,11 +117,11 @@
             <!-- Clints -->
             
             <!-- fun-fact -->
-            <section class="fun-fact medical-fact padd-65">
-                <div class="container">
-                    @include('partials.ourArchivements')
-                </div>
-            </section>
+            <!--<section class="fun-fact medical-fact padd-65">-->
+            <!--    <div class="container">-->
+            <!--        @include('partials.ourArchivements')-->
+            <!--    </div>-->
+            <!--</section>-->
             <!-- End fun-fact -->
 
             <!-- Our Doctors Start -->

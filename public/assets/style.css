@@ -17242,7 +17242,8 @@ a.text-line-through {
 }
 
 .shop-cart img {
-    max-width: 50px;
+    margin:5px;
+    max-width: 70px;
     float: left;
 }
 

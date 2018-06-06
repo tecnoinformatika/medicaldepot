@@ -44,6 +44,9 @@
                     <button class="btn-toggle"><i class="fa fa-reorder"></i></button>
                     <nav class="nav">
                      @include('partials.nav')
+                    
                     </nav>
+                    
                 </div>
             </div><!-- Main bar end -->
+ @include('auth.login')

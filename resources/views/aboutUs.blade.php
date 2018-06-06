@@ -37,6 +37,7 @@
         <!-- header start -->
         <header class="site-header header11">
             @include('partials.header')
+            @include('auth.login')
         </header>
         <!-- header End -->
         <!-- breadcrumbs start -->

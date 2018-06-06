@@ -23,3 +23,5 @@ Route::get('/welcome', 'HomeController@index')->name('welcome');
 Route::get('/aboutUs', 'navController@aboutUs')->name('aboutUs');
 Route::get('/contact', 'navController@contact')->name('contact');
 Route::get('/shopProducts', 'navController@shopProducts')->name('shopProducts');
+Route::get('/shopCart', 'navController@shopCart')->name('shopCart');
+Route::get('/registerAccount', 'navController@registerUSer')->name('registerAccount');

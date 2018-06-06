@@ -9,7 +9,7 @@
                     <div class="item-say">
                         <p>"Our nursing home now orders all it's supplies from this seller. We get everything we need, as ordered, on time, with a lot of savings. Thank you for the great service. "</p>
                         <div class="image-say say-border-color">
-                            <img src="" alt="">
+                            <img src="assets/images/faces/thumbs244x244/team01.jpg" alt="">
                         </div>
                         <div class="name-say say-color">Michael Smith</div>
                         <span>Supply Manager</span>
