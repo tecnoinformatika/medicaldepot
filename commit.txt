@@ -1,0 +1,17 @@
+commit 69a38d5dfee1aef4c1a7f8c11aea80a34c009951
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Wed Jun 6 21:50:57 2018 +0000
+
+    initial cart shop
+
+commit 816a5311a0b36c2eef7dbdf895816a8226e10f39
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Wed Jun 6 16:55:52 2018 +0000
+
+    login & logout ok
+
+commit 4021b0b5c6b299fec4f47cfed7d47a3a3c426b72
+Author: Jesus Ortega <jeortegaga@gmail.com>
+Date:   Fri Jun 1 15:24:44 2018 +0000
+
+    initial commit
