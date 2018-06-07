@@ -48,6 +48,7 @@
                 <li><a href=""><i class="fa fa-angle-double-right"></i>Shop Right Sidebar</a></li>
             </ul>
         </div>
+      
         <!-- Breadcrumbs end -->
         <div class="main-content">
             <div class="page-content page-sidebar">
@@ -56,18 +57,26 @@
                         @include('partials.login')
                         <div class="col-md-8 col-lg-9">
                             <div class="row">
+                               
+                      
+                             
+                             
+                               @foreach($items as $product)
+            
+                               
                                 <div class="col-md-3">
                                     <div class="item-product first">
                                         <div class="product-thumb">
                                             <div class="midd">
-                                                <a href="product.html"><img src="images/shop/1.jpg" alt=""></a>
+                                                <a href="product.html">
+                                                    <img src="images/shop/1.jpg" alt="">{{$product}}</a>
                                                 <div class="n-content">
                                                     <p>New</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="info-product">
-                                            <h4><a href="product.html">Dictum spsuming</a></h4>
+                                            <h4><a href="product.html"></a></h4>
                                             <div class="rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -75,195 +84,196 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-o"></i>
                                             </div>
-                                            <p class="price">$430</p>
+                                            <p class="price">500</p>
                                             <div class="add-cart">
                                                 <a href="#" class="shop-btn">Add to Cart</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="item-product">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html"><img src="images/shop/2.jpg" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <h4><a href="product.html">Aliquam lobortis</a></h4>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <p class="price">$200</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="item-product">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html"><img src="images/shop/3.jpg" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <h4><a href="product.html">Peberkas tongue</a></h4>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <p class="price">$200</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="item-product first">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html"><img src="images/shop/5.jpg" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <h4><a href="product.html">Porta tenderloin</a></h4>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
-                                            <p class="price">$140</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="item-product">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html"><img src="images/shop/4.jpg" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <h4><a href="product.html">Lectus egestas</a></h4>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-half-o"></i>
-                                            </div>
-                                            <p class="price">$230</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="item-product">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html"><img src="images/shop/6.jpg" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <h4><a href="product.html">Cenean congue</a></h4>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <p class="price">$170</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="item-product">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html"><img src="images/shop/6.jpg" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <h4><a href="product.html">Cenean congue</a></h4>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <p class="price">$170</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="item-product">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html"><img src="images/shop/6.jpg" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <h4><a href="product.html">Cenean congue</a></h4>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <p class="price">$170</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
+                                                     <!--<div class="col-md-3">-->
+                                <!--    <div class="item-product">-->
+                                <!--        <div class="product-thumb">-->
+                                <!--            <div class="midd">-->
+                                <!--                <a href="product.html"><img src="images/shop/2.jpg" alt=""></a>-->
+                                <!--                <div class="n-content">-->
+                                <!--                    <p>New</p>-->
+                                <!--                </div>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--        <div class="info-product">-->
+                                <!--            <h4><a href="product.html">Aliquam lobortis</a></h4>-->
+                                <!--            <div class="rating">-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--            </div>-->
+                                <!--            <p class="price">$200</p>-->
+                                <!--            <div class="add-cart">-->
+                                <!--                <a href="#" class="shop-btn">Add to Cart</a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3">-->
+                                <!--    <div class="item-product">-->
+                                <!--        <div class="product-thumb">-->
+                                <!--            <div class="midd">-->
+                                <!--                <a href="product.html"><img src="images/shop/3.jpg" alt=""></a>-->
+                                <!--                <div class="n-content">-->
+                                <!--                    <p>New</p>-->
+                                <!--                </div>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--        <div class="info-product">-->
+                                <!--            <h4><a href="product.html">Peberkas tongue</a></h4>-->
+                                <!--            <div class="rating">-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--            </div>-->
+                                <!--            <p class="price">$200</p>-->
+                                <!--            <div class="add-cart">-->
+                                <!--                <a href="#" class="shop-btn">Add to Cart</a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3">-->
+                                <!--    <div class="item-product first">-->
+                                <!--        <div class="product-thumb">-->
+                                <!--            <div class="midd">-->
+                                <!--                <a href="product.html"><img src="images/shop/5.jpg" alt=""></a>-->
+                                <!--                <div class="n-content">-->
+                                <!--                    <p>New</p>-->
+                                <!--                </div>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--        <div class="info-product">-->
+                                <!--            <h4><a href="product.html">Porta tenderloin</a></h4>-->
+                                <!--            <div class="rating">-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star-o"></i>-->
+                                <!--                <i class="fa fa-star-o"></i>-->
+                                <!--            </div>-->
+                                <!--            <p class="price">$140</p>-->
+                                <!--            <div class="add-cart">-->
+                                <!--                <a href="#" class="shop-btn">Add to Cart</a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3">-->
+                                <!--    <div class="item-product">-->
+                                <!--        <div class="product-thumb">-->
+                                <!--            <div class="midd">-->
+                                <!--                <a href="product.html"><img src="images/shop/4.jpg" alt=""></a>-->
+                                <!--                <div class="n-content">-->
+                                <!--                    <p>New</p>-->
+                                <!--                </div>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--        <div class="info-product">-->
+                                <!--            <h4><a href="product.html">Lectus egestas</a></h4>-->
+                                <!--            <div class="rating">-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star-half-o"></i>-->
+                                <!--            </div>-->
+                                <!--            <p class="price">$230</p>-->
+                                <!--            <div class="add-cart">-->
+                                <!--                <a href="#" class="shop-btn">Add to Cart</a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3">-->
+                                <!--    <div class="item-product">-->
+                                <!--        <div class="product-thumb">-->
+                                <!--            <div class="midd">-->
+                                <!--                <a href="product.html"><img src="images/shop/6.jpg" alt=""></a>-->
+                                <!--                <div class="n-content">-->
+                                <!--                    <p>New</p>-->
+                                <!--                </div>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--        <div class="info-product">-->
+                                <!--            <h4><a href="product.html">Cenean congue</a></h4>-->
+                                <!--            <div class="rating">-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--            </div>-->
+                                <!--            <p class="price">$170</p>-->
+                                <!--            <div class="add-cart">-->
+                                <!--                <a href="#" class="shop-btn">Add to Cart</a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3">-->
+                                <!--    <div class="item-product">-->
+                                <!--        <div class="product-thumb">-->
+                                <!--            <div class="midd">-->
+                                <!--                <a href="product.html"><img src="images/shop/6.jpg" alt=""></a>-->
+                                <!--                <div class="n-content">-->
+                                <!--                    <p>New</p>-->
+                                <!--                </div>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--        <div class="info-product">-->
+                                <!--            <h4><a href="product.html">Cenean congue</a></h4>-->
+                                <!--            <div class="rating">-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--            </div>-->
+                                <!--            <p class="price">$170</p>-->
+                                <!--            <div class="add-cart">-->
+                                <!--                <a href="#" class="shop-btn">Add to Cart</a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-3">-->
+                                <!--    <div class="item-product">-->
+                                <!--        <div class="product-thumb">-->
+                                <!--            <div class="midd">-->
+                                <!--                <a href="product.html"><img src="images/shop/6.jpg" alt=""></a>-->
+                                <!--                <div class="n-content">-->
+                                <!--                    <p>New</p>-->
+                                <!--                </div>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--        <div class="info-product">-->
+                                <!--            <h4><a href="product.html">Cenean congue</a></h4>-->
+                                <!--            <div class="rating">-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--                <i class="fa fa-star"></i>-->
+                                <!--            </div>-->
+                                <!--            <p class="price">$170</p>-->
+                                <!--            <div class="add-cart">-->
+                                <!--                <a href="#" class="shop-btn">Add to Cart</a>-->
+                                <!--            </div>-->
+                                <!--        </div>-->
+                                <!--    </div>-->
+                                <!--</div>-->
                                 <ul class="pagination">
                                     <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
                                     <li class="active"><a href="#">1</a></li>

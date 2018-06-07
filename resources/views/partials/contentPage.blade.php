@@ -102,7 +102,7 @@
             <!--</section>-->
             <!-- End:section start -->
             <!-- Section start -->
-            <section class="medical-our-Services">
+            <section name="service-ancla" class="medical-our-Services">
                 <div class="container">
                 @include('partials.ourService')
                 </div>

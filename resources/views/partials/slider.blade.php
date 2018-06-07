@@ -13,7 +13,7 @@
                                         Check Out Our Services!
                                     </div>
                                     <div class="tp-caption sfr stl tp-resizeme zindex" data-x="center" data-hoffset="-15" data-y="380" data-speed="300" data-start="1800" data-easing="easeInOut">
-                                        <a class="btn btn-blue tp-resizeme" href="">Check Out</a>
+                                        <a class="btn btn-blue tp-resizeme" href="#service-ancla">Check Out</a>
                                         <a class="btn btn-border tp-resizeme" href="">Read More</a>
                                     </div>
                                 </li>
