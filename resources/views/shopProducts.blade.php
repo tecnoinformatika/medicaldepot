@@ -57,26 +57,28 @@
                         @include('partials.login')
                         <div class="col-md-8 col-lg-9">
                             <div class="row">
-                               
-                      
                              
-                             
-                               @foreach($items as $product)
-            
-                               
+                                
+                                @foreach($items['Items']['Item'] as $product)
+                                
                                 <div class="col-md-3">
                                     <div class="item-product first">
                                         <div class="product-thumb">
                                             <div class="midd">
                                                 <a href="product.html">
-                                                    <img src="images/shop/1.jpg" alt="">{{$product}}</a>
+                                                    <img src="{{$product['MediumImage']['URL']}}" alt=""></a>
                                                 <div class="n-content">
                                                     <p>New</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="info-product">
-                                            <h4><a href="product.html"></a></h4>
+                                            <form action="{{route ('ProductDetails')}}" method="POST" id="myForm">
+                                                @csrf
+                                                
+                                            <input type="hidden" name="asin" value="{{$product['ASIN']}}">
+                                            <h4><a href="#" onclick="javascript:document.getElementById('myForm').submit(); return false;">{{$product['ItemAttributes']['Title']}}</a></h4>
+                                            </form>
                                             <div class="rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -84,7 +86,7 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-o"></i>
                                             </div>
-                                            <p class="price">500</p>
+                                            <p class="price">{{$product['ItemAttributes']['ListPrice']['FormattedPrice']}}</p>
                                             <div class="add-cart">
                                                 <a href="#" class="shop-btn">Add to Cart</a>
                                             </div>
@@ -330,6 +332,8 @@
                 </div>
             </div>
         </div>
+        
+        
         <footer>
             @include('partials.footer')
         </footer><!-- End: footer -->

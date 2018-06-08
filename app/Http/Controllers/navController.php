@@ -15,9 +15,18 @@ class navController extends Controller
     public function contact(){
         return view('contact');
     }
-    
+    public function ProductDetails(Request $request){
+       
+        $asin =  $request->asin;
+        $brand = $request->brand;
+        $brand = Amazon::search($brand)->json();
+        $product = Amazon::lookup($asin)->json();
+        return view('ProductDetails')->with('itemdetails', $product)->with('brand', $brand);
+       
+        
+    }
     public function shopProducts(){
-     $product = Amazon::search('Health and Beauty')->json();
+     $product = Amazon::search('Pride Mobility')->json();
   
         
         return view('shopProducts')->with('items',$product);
