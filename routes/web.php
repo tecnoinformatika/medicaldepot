@@ -26,3 +26,16 @@ Route::get('/shopProducts', 'navController@shopProducts')->name('shopProducts');
 Route::POST('/ProductDetails', 'navController@ProductDetails')->name('ProductDetails');
 Route::get('/shopCart', 'navController@shopCart')->name('shopCart');
 Route::get('/registerAccount', 'navController@registerUSer')->name('registerAccount');
+
+//shoping cart 
+Route::get('/cart','CartController@index')->name('cart.index');
+Route::post('/cart','CartController@add')->name('cart.add');
+Route::get('/cart/details','CartController@details')->name('cart.details');
+Route::delete('/cart/{id}','CartController@delete')->name('cart.delete');
+Route::group(['prefix' => 'wishlist'],function()
+{
+    Route::get('/','WishListController@index')->name('wishlist.index');
+    Route::post('/','WishListController@add')->name('wishlist.add');
+    Route::get('/details','WishListController@details')->name('wishlist.details');
+    Route::delete('/{id}','WishListController@delete')->name('wishlist.delete');
+});

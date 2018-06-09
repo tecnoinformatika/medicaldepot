@@ -115,23 +115,23 @@ html {
     text-align: right;
 }
 .custom-size-6 {
-    font-size: 68px;
+    font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    color: #323232; 
+    color: #fff; 
 }
 .custom-size-6.color {
     text-transform: none;
-    color: #2cbfd9;
+    color: #3eb13cba;
 }
 .custom-size-6.color-2 {
     text-transform: none;
     color: #d3a662;
 }
 .custom-size-6.size {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 55px;
 }
 .custom-size-6.size-2 {
@@ -220,11 +220,11 @@ html {
     border-color: #fff;
 }
 .custom-size-11 {
-    font-size: 14px;
+    font-size: 30px;
     color: #bbb; 
 }
 .custom-size-11.color-1 {
-    color: #79797c;
+    color: green;
     font-family: 'Raleway' , Arial , sans-serif;
     font-weight: 600;
 }

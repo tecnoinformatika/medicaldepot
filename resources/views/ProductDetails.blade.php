@@ -64,38 +64,32 @@
                                         <div class="pro-details">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    
                                                     <div id="img-preview" class="img-product">
+                                                        
                                                     @foreach($itemdetails['Items']['Item']['ImageSets']['ImageSet'] as $image)
+                                                        @if(isset($image['LargeImage']['URL']))
                                                         <img src="{{$image['LargeImage']['URL']}}" alt="">
+                                                        @else
+                                                         <img src="{{$itemdetails['Items']['Item']['ImageSets']['ImageSet']['LargeImage']['URL']}}" alt="">
+                                                        @break;
+                                                        @endif
                                                        
                                                     @endforeach
                                                     </div>
                                                 </div>
-                                                
                                                 <div class="col-md-6">
                                                     <h3>{{ $itemdetails['Items']['Item']['ItemAttributes']['Title']}}</h3>
                                                     <div class="single-rating">
-                                                        <!--<spa>n>-->
-                                                        <!--    <i class="fa fa-star"></i>-->
-                                                        <!--    <i class="fa fa-star"></i>-->
-                                                        <!--    <i class="fa fa-star"></i>-->
-                                                        <!--    <i class="fa fa-star"></i>-->
-                                                        <!--    <i class="fa fa-star-o"></i>-->
-                                                        <!--</span-->
-
-                                                        <p>Availability: <span>In stock</span></p>
-                                                        
-                                                       
+                                                      <p>Availability: <span>In stock</span></p>
+                                                       <p>{{$itemdetails['Items']['Item']['ItemAttributes']['Feature']['0']}}</p>
                                                         <p class="single-price">{{ $itemdetails['Items']['Item']['ItemAttributes']['ListPrice']['FormattedPrice']}}</p>
                                                         <div class="product-cart">
                                                             <input type="number" step="1" min="1" name="quantity" value="1" title="Qty" class="input-text qty text" size="4">
                                                             <button type="submit" class="btn btn-color2">Add to cart</button>
-                                                            
                                                         </div>
                                                         <div class="cat">
                                                             Categories:
-                                                            <a href="#">{{ $itemdetails['Items']['Item']['ItemAttributes']['Binding']}}</a>
+                                                            <a href="#"></a>
                                                         </div>
                                                         <!--<div class="follow-us">-->
                                                         <!--    <ul>-->
@@ -114,7 +108,6 @@
                                                 <div id="tabs-default" class="tabs-default">
                                                     <ul class="title-tabs none-style">
                                                         <li><a href="#tab13"> Description </a></li>
-                                                      
                                                     </ul>
                                                     <div class="content-tabs">
                                                         <div id="tab13">
@@ -197,121 +190,28 @@
                                         <div class="pro-related">
                                             <h4>RELATED PRODUCTS</h4>
                                             <div id="product-owl" class="pro-slider">
-                                                <div class="item-product">
+                                                
+                                                @foreach($brands['Items']['Item'] as $brand )
+                                       
                                                     <div class="product-thumb">
                                                         <div class="midd">
-                                                            <a href="product.html"><img src="images/shop/3.jpg" alt=""></a>
+                                                          <a href="product.html"><img src="{{$brand['MediumImage']['URL']}}" alt=""></a>
                                                         </div>
                                                     </div>
                                                     <div class="info-product">
                                                         <h4>
-                                                            <a href="product.html">Washing Machine</a>
+                                                            <a href="product.html">{{str_limit($brand['ItemAttributes']['Title'],15)}}</a>
                                                         </h4>
-                                                        <div class="rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-half-o"></i>
-                                                        </div>
-                                                        <p class="price">$230</p>
+                                                        <p class="price">{{ $brand['ItemAttributes']['ListPrice']['FormattedPrice']}}</p>
                                                         <div class="add-cart">
                                                             <a href="#" class="related-btn">Add to Cart</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="item-product">
-                                                    <div class="product-thumb">
-                                                        <div class="midd">
-                                                            <a href="product.html"><img src="images/shop/4.jpg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <h4>
-                                                            <a href="product.html">Bag</a>
-                                                        </h4>
-                                                        <div class="rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                        </div>
-                                                        <p class="price">$140</p>
-                                                        <div class="add-cart">
-                                                            <a href="#" class="related-btn">Add to Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item-product">
-                                                    <div class="product-thumb">
-                                                        <div class="midd">
-                                                            <a href="product.html"><img src="images/shop/5.jpg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <h4>
-                                                            <a href="product.html">Sony phone</a>
-                                                        </h4>
-                                                        <div class="rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                        </div>
-                                                        <p class="price">$130</p>
-                                                        <div class="add-cart">
-                                                            <a href="#" class="related-btn">Add to Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item-product">
-                                                    <div class="product-thumb">
-                                                        <div class="midd">
-                                                            <a href="product.html"><img src="images/shop/6.jpg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <h4>
-                                                            <a href="product.html">iphone 7</a>
-                                                        </h4>
-                                                        <div class="rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <p class="price">$170</p>
-                                                        <div class="add-cart">
-                                                            <a href="#" class="related-btn">Add to Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item-product">
-                                                    <div class="product-thumb">
-                                                        <div class="midd">
-                                                            <a href="product.html"><img src="images/shop/1.jpg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="info-product">
-                                                        <h4>
-                                                            <a href="product.html">Black camera</a>
-                                                        </h4>
-                                                        <div class="rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <p class="price">$170</p>
-                                                        <div class="add-cart">
-                                                            <a href="#" class="related-btn">Add to Cart</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                @endforeach
+                                                                                                <!-- <div class="item-product">-->
+                                                
+
                                             </div>
                                         </div>
                                     </div>

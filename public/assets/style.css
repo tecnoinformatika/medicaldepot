@@ -1,4 +1,4 @@
-﻿/*-----------------------------------------------------------------------------------
+/*-----------------------------------------------------------------------------------
 
     Template Name: Baako - Corporate HTML5 Template
     Template URI: http://bootexperts.com
@@ -1984,8 +1984,6 @@ a.search-bgdark:hover {
     /*background: -webkit-linear-gradient(top,#036 0,transparent 100%);*/
     /*background: linear-gradient(to bottom,#036 0,transparent 100%);*/
     /*background:#ffffff; */
-    
-    
     position: absolute;
     opacity: 0.9;
     top: 0;
@@ -25405,6 +25403,12 @@ footer.footer-color9 .copyright .back-top:hover a {
     .coming-soon-content .btn i {
         display: none;
     }
+    
+    
+    
+    /*style box color red*/
+    
+    
 }
 
 

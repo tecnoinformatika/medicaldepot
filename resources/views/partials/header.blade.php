@@ -38,7 +38,7 @@
                 <div class="container">
                     <div class="logo">
                         <a href="home.html">
-                            <img src="assets/imagesMedical/logo.png" width="173px" height="auto" alt="">
+                            <img src="assets/images/logo-n.png" width="173px" height="auto" alt="">
                         </a>
                     </div>
                     <button class="btn-toggle"><i class="fa fa-reorder"></i></button>

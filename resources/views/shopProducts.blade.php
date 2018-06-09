@@ -20,6 +20,7 @@
     <!-- Bootstrap-3.3.7 fremwork css -->
     @include('partials.head')
     
+    
 </head>
 
 <body>
@@ -50,6 +51,7 @@
         </div>
       
         <!-- Breadcrumbs end -->
+   
         <div class="main-content">
             <div class="page-content page-sidebar">
                 <div class="container">
@@ -57,43 +59,47 @@
                         @include('partials.login')
                         <div class="col-md-8 col-lg-9">
                             <div class="row">
-                             
-                                
-                                @foreach($items['Items']['Item'] as $product)
-                                
-                                <div class="col-md-3">
-                                    <div class="item-product first">
-                                        <div class="product-thumb">
-                                            <div class="midd">
-                                                <a href="product.html">
-                                                    <img src="{{$product['MediumImage']['URL']}}" alt=""></a>
-                                                <div class="n-content">
-                                                    <p>New</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="info-product">
-                                            <form action="{{route ('ProductDetails')}}" method="POST" id="myForm">
-                                                @csrf
-                                                
-                                            <input type="hidden" name="asin" value="{{$product['ASIN']}}">
-                                            <h4><a href="#" onclick="javascript:document.getElementById('myForm').submit(); return false;">{{$product['ItemAttributes']['Title']}}</a></h4>
-                                            </form>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
-                                            <p class="price">{{$product['ItemAttributes']['ListPrice']['FormattedPrice']}}</p>
-                                            <div class="add-cart">
-                                                <a href="#" class="shop-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                @endforeach
+            @foreach($items['Items']['Item'] as $product)
+            <form action="{{route ('ProductDetails')}}" method="POST" name="myFormmyForm{{$product['ASIN']}}" id="myForm{{$product['ASIN']}}" >
+                @csrf
+            <div class="col-md-3">
+                <div class="item-product first">
+                    <div class="product-thumb">
+                        <div class="midd">
+                            <a href="#" onclick="document.forms['myForm{{$product['ASIN']}}'].submit();">
+                                <img  src="{{$product['MediumImage']['URL']}}" alt=""></a>
+                            <div class="n-content">
+                                <p>New</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-product">
+                        <input type="hidden" id="asinDetailProduct-{{$product['ASIN']}}" name="asinDetailProduct" value="{{$product['ASIN']}}">
+                        
+                        <input type="hidden" id="asinMoreProducts-" name="asinMoreProducts" value="{{ $product['ItemAttributes']['Title']}}"/>
+                       
+                  
+                        
+                        <h4 ><a maxlength="15" href="#" onclick="document.forms['myForm{{$product['ASIN']}}'].submit();"> {{str_limit($product['ItemAttributes']['Title'] , 20)}}</a></h4>
+                        
+                        
+                        <!--<div class="rating">-->
+                        <!--    <i class="fa fa-star"></i>-->
+                        <!--    <i class="fa fa-star"></i>-->
+                        <!--    <i class="fa fa-star"></i>-->
+                        <!--    <i class="fa fa-star"></i>-->
+                        <!--    <i class="fa fa-star-o"></i>-->
+                        <!--</div>-->
+                        <p class="price">{{$product['ItemAttributes']['ListPrice']['FormattedPrice']}}</p>
+                        <div class="add-cart">
+                            <a href="#" class="shop-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+            @endforeach
+                              
                                                      <!--<div class="col-md-3">-->
                                 <!--    <div class="item-product">-->
                                 <!--        <div class="product-thumb">-->
@@ -332,6 +338,30 @@
                 </div>
             </div>
         </div>
+        <script>
+    function capturar()
+    {
+        // obtenemos e valor por el numero de elemento
+        var porElementos=document.forms["form1"].elements[0].value;
+        // Obtenemos el valor por el id
+        var porId=document.getElementById("asinDetailProduct-").value;
+        var porId=document.getElementById("asinMoreProducts-").value;
+        
+        // Obtenemos el valor por el Nombre
+        var porNombre=document.getElementsByName("nombre")[0].value;
+        // Obtenemos el valor por el tipo de tag
+        var porTagName=document.getElementsByTagName("input")[0].value;
+        // Obtenemos el valor por el nombre de la clase
+        var porClassName=document.getElementsByClassName("formulario")[0].value;
+ 
+        document.getElementById("resultado").innerHTML=" \
+            Por elementos: "+porElementos+" \
+            <br>Por ID: "+porId+" \
+            <br>Por Nombre: "+porNombre+" \
+            <br>Por TagName: "+porTagName+" \
+            <br>Por ClassName: "+porClassName;
+    }
+    </script>
         
         
         <footer>
@@ -339,6 +369,16 @@
         </footer><!-- End: footer -->
     </div>
     <!-- Jquery -->
+    <script type="text/javascript">
+function submitform()
+{
+     var theForm = document.forms['form1'];
+     if (!theForm) {
+         theForm = document.form1;
+     }
+     theForm.submit();
+}
+</script>
   @include('partials.routesScripts')
 </body>
 

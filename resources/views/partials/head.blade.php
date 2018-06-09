@@ -21,7 +21,6 @@
     <!-- Bootstrap-3.3.7 fremwork css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Slider carousel css  -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
     <!-- Slider css  -->
     <link rel="stylesheet" href="assets/rs-plugin/css/settings.css" />
     <link rel="stylesheet" href="assets/css/rev-settings.css"/>
@@ -30,6 +29,17 @@
     <!-- Main style css -->
     <link rel="stylesheet" href="assets/style.css"/>
     <link rel="stylesheet" href="assets/css/shop.css" />
+    
+    
+    
+    <link rel="stylesheet" href="assets/css/colorbox.css"/>
+    <!-- Slider carousel css  -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
+    <!-- Slider revolution css  -->
+    <!-- font Awesome-4.6.3 css -->
+    <!-- Main style css -->
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
     
     
     

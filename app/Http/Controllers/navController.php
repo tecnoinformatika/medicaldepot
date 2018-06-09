@@ -16,12 +16,14 @@ class navController extends Controller
         return view('contact');
     }
     public function ProductDetails(Request $request){
-       
-        $asin =  $request->asin;
-        $brand = $request->brand;
-        $brand = Amazon::search($brand)->json();
-        $product = Amazon::lookup($asin)->json();
-        return view('ProductDetails')->with('itemdetails', $product)->with('brand', $brand);
+     
+    
+        $asinDetailProduct =  $request->asinDetailProduct;
+        $asinMoreProducts =   $request->asinMoreProducts;
+        $asinDetailProduct= Amazon::search($asinDetailProduct)->json();
+        $asinMoreProducts = Amazon::search($asinMoreProducts)->json();
+        
+        return view('ProductDetails')->with('itemdetails', $asinDetailProduct)->with('brands', $asinMoreProducts);
        
         
     }
