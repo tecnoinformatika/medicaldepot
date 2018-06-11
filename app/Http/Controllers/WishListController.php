@@ -1,9 +1,11 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: darryl
+ * Date: 5/24/2017
+ * Time: 10:12 PM
+ */
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
 class WishListController extends Controller
 {
     public function index()

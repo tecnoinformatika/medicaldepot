@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Amazon;
+use App\Brand;
 
 class navController extends Controller
 {
@@ -29,7 +30,6 @@ class navController extends Controller
     }
     public function shopProducts(){
      $product = Amazon::search('Pride Mobility')->json();
-  
         
         return view('shopProducts')->with('items',$product);
     }
@@ -39,8 +39,20 @@ class navController extends Controller
         return view('shopCart');
     }
     
+    public function brandsfooter(){
+        
+        $brand = brand::getall();
+        
+        dd($brand);
+    }
+    
     public function registerUSer(){
         return view('registerAccount');
+        
+    }
+    
+    public function pruebaCart(){
+        return view('pruebaCart');
         
     }
 }

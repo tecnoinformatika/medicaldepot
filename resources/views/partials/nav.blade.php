@@ -1,9 +1,9 @@
-   <ul class="main-menu">
+   <ul class="main-menu" id="wishlist">
                             <li>
                                 <a href="{{ route('welcome')}}">Home</a>
                             </li>
                             <li>
-                                 <a href="{{ route('aboutUs')}}">About Us</a>
+                                 <a href="{{ route('pruebaCart')}}">About Us</a>
                             </li>
                             <li class="menu-item-has-children">
                                  <a href="{{ route('contact')}}">Contact</a>
@@ -43,53 +43,30 @@
                                 </ul>
                              @endguest
                             </li>
-                            <li class="cart-dropdown"><a class="padd-0" href="{{ route('shopCart')}}"><i class="fa fa-shopping-cart"></i> 8</a>
-                                <div class="dropdown-content">
-                                    <div class="item-box">
+                            <li class="cart-dropdown"><a class="padd-0" href="{{ route('shopCart')}}"><i class="fa fa-shopping-cart"></i> @{{itemCount}} </a>
+                                <div class="dropdown-content" >
+                                    <div class="item-box" v-for="item in items">
                                         <div class="image-info">
                                             <img class="img-thumbnail" src="assets/images/shop/1.jpg">
                                         </div> 
                                         <div class="item-content">
-                                            <h2><a href="">Photo camera</a></h2>
-                                            <span>$ 400</span>
+                                            <h2><a href="">@{{item.name}}</a></h2>
+                                            <span>$ @{{item.price}}</span></br>
+                                            <span>Qty @{{item.quantity}}</span>
                                         </div>
                                         <div class="cart-delete">
-                                            <a href=""><i class="fa fa-trash-o"></i></a>
+                                            <a href=""  v-on:click="removeItem(item.id)"><i class="fa fa-trash-o"></i></a>
                                         </div>
                                     </div>
-                                    <div class="item-box">
-                                        <div class="image-info">
-                                            <img class="img-thumbnail" src="assets/images/shop/2.jpg">
-                                        </div> 
-                                        <div class="item-content">
-                                            <h2><a href="">Headphone</a></h2>
-                                            <span>$ 200</span>
+                                        <div class="text-center">
+                                        <p>SubTotal: @{{ '$' + details.sub_total.toFixed(2) }}</p>
                                         </div>
-                                        <div class="cart-delete">
-                                            <a href=""><i class="fa fa-trash-o"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="item-box">
-                                        <div class="image-info">
-                                            <img class="img-thumbnail" src="assets/images/shop/3.jpg">
-                                        </div> 
-                                        <div class="item-content">
-                                            <h2><a href="">Washing Machine</a></h2>
-                                            <span>$ 355</span>
-                                        </div>
-                                        <div class="cart-delete">
-                                            <a href=""><i class="fa fa-trash-o"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <p>SubTotal: $955</p>
-                                    </div>
                                     <div class="text-center">
                                         <a href="{{ route('shopCart')}}" class="btn cart-btn blue">View Cart</a>
                                         <a href="" class="btn cart-btn border">Check Out</a>
                                     </div>
                                 </div>
                             </li>
-                               
                              </ul>
+
                             

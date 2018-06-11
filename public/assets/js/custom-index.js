@@ -45,24 +45,7 @@
         );
         wow.init();
     }
-    
-    (function($) {
-        $(document).ready(function() {
-            $(window).load(function() {
-            $('.nav_slide_button').on('click',function() {
-              $('.top-search').slideToggle();
-
-            });
-            $('#search-delete').on('click',function() {
-              $(".top-search").slideUp("slow");
-            });
-          });
-            
-        document.querySelector("#search-toggle").addEventListener("click", function() {
-            this.classList.toggle("active");
-          });
-        });
-    }(window.jQuery || window.$));
+   
 
     //Position Navigation
 

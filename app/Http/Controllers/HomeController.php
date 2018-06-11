@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use AmazonProduct;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,21 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        
+        
+        try{
+            //$allProducts = Amazon::search('Wireless Phone Accessory')->json();
+            //$response = AmazonProduct::search('Wireless Phone Accessory', 'amazon' , 1);
+            $response = AmazonProduct::search('HealthPersonalCare', 'pride-mobility' , 1);
+            
+            
+        }catch(Exception $e){
+            
+        }
+        return view('welcome')->with('allProducts', $response);
+        
+        
+        
+        
     }
 }

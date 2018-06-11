@@ -1,9 +1,11 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: darryl
+ * Date: 4/30/2017
+ * Time: 10:58 AM
+ */
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
 class CartController extends Controller
 {
     public function index()

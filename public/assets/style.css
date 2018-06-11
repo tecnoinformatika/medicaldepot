@@ -8792,7 +8792,7 @@ a.search-bgdark:hover {
     color: #fff;
 }
 .wesay-light-3 {
-    background: url(images/bg/bg-fact-3.jpg) center center repeat;
+    background: url(imagesMedical/footerafter.jpg) center center repeat;
     padding: 150px 0 150px;
     position: relative;
 }
@@ -8806,7 +8806,7 @@ a.search-bgdark:hover {
     color: #fff;
 }
 .wesay-light-3.testimonials-bg {
-    background: url(imagesMedical/testimonials.jpg) center center repeat;
+    background: url(imagesMedical/footerafter.jpg) center center repeat;
     position: relative;
 }
 .wesay-light-3.testimonials-bg:before {
@@ -12707,7 +12707,7 @@ ul.list-posts.recent-posts > li .news-info h2 a:hover {
 
 .useful {
     padding: 65px 30px;
-    background: url(images/bg/bg-link.jpg) center center no-repeat;
+    /*background: url(images/bg/bg-link.jpg) center center no-repeat;*/
     -webkit-background-size: cover;
     background-size: cover;
     color: #999;
@@ -12737,19 +12737,21 @@ ul.list-posts.recent-posts > li .news-info h2 a:hover {
     padding-left: 5px;
 }
 .useful.bg {
-    background: url(images/slider/img_slider1_slide3.jpg) center center no-repeat;
+    background: url(imagesMedical/footerafter.jpg) center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
+    
+    
 }
 .useful.bg:before {
-    content: '';
+    content: '              ';
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.1);
     position: absolute;
 }
 .useful.bg i {
@@ -18274,7 +18276,7 @@ right connector from last child*/
 .medical-our-Services {
     padding: 50px 0;
     margin: 0;
-    background: #fafafa;
+    background: #c7c4c4;
 }
 .medical-our-Services h2 {
     text-transform: none;
@@ -18287,6 +18289,7 @@ right connector from last child*/
     margin: 0;
     border: 1px solid #e4e4e4;
     border-radius: 25px;
+    background: white;
     margin-bottom: 30px;
 }
 .medical-our-Services .service-medical h2 {
@@ -22410,8 +22413,8 @@ span.txt-style-1 {
 ===============================================*/
 
 footer {
-    color: #999;
-    background: #0e0e0e;
+    color: #fff;
+    background: #3e3b3b;
 }
 
 footer a,
@@ -22600,7 +22603,7 @@ footer .twitter-feed i {
     outline: none;
     height: 40px;
     line-height: 40px;
-    background: transparent;
+    background: white;
     border: 1px solid #262934 !important;
     border-radius: 3px;
     width: 100%;
@@ -25405,8 +25408,7 @@ footer.footer-color9 .copyright .back-top:hover a {
     }
     
     
-    
-    /*style box color red*/
+  
     
     
 }

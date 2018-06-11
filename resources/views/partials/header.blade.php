@@ -14,7 +14,7 @@
                         <div class="col-lg-6 col-sm-6"><!-- Contacts start -->
                             <div class="contacts">
                                 <p><i class="fa fa-phone"></i> +1 (833) 9SUPPLY  -  (833) 978-7759 </p>
-                                <p><i class="fa fa-envelope-o"></i><a href="#">sales@medical-supply.us</a></p>
+                                <p><i class="fa fa-envelope-o"></i><a href="#">sales@expressmedicaldepot.com</a></p>
                             </div><!-- Contacts start -->
                         </div>
                         <div class="col-lg-6 col-sm-6"><!-- Social media start -->
@@ -44,7 +44,6 @@
                     <button class="btn-toggle"><i class="fa fa-reorder"></i></button>
                     <nav class="nav">
                      @include('partials.nav')
-                    
                     </nav>
                     
                 </div>

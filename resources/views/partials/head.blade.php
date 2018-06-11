@@ -4,7 +4,11 @@
     <!-- CSRF Token -->
    
     <!-- Scripts -->
-    <script src="assets/app.js" defer></script>
+   
+
+   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
     <title>Logistic Medical</title>
@@ -29,9 +33,9 @@
     <!-- Main style css -->
     <link rel="stylesheet" href="assets/style.css"/>
     <link rel="stylesheet" href="assets/css/shop.css" />
-    
-    
-    
+     <link rel="stylesheet" href="assets/css/components/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/sliders/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/components/effects.css">
     <link rel="stylesheet" href="assets/css/colorbox.css"/>
     <!-- Slider carousel css  -->
     <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
@@ -40,9 +44,6 @@
     <!-- Main style css -->
     <!-- animate css -->
     <link rel="stylesheet" href="assets/css/animate.css" />
-    
-    
-    
     
     <!-- Favicons
     ================================================== -->
@@ -54,3 +55,5 @@
     <!-- font Awesome-4.6.3 css -->
     <!-- Main style css -->
     <link rel="stylesheet" href="assets/style.css"/>
+    
+    

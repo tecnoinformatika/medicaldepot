@@ -21,6 +21,7 @@ Route::get('/welcome', 'HomeController@index')->name('welcome');
 
 
 Route::get('/aboutUs', 'navController@aboutUs')->name('aboutUs');
+Route::get('/pruebaCart', 'navController@pruebaCart')->name('pruebaCart');
 Route::get('/contact', 'navController@contact')->name('contact');
 Route::get('/shopProducts', 'navController@shopProducts')->name('shopProducts');
 Route::POST('/ProductDetails', 'navController@ProductDetails')->name('ProductDetails');
@@ -32,6 +33,10 @@ Route::get('/cart','CartController@index')->name('cart.index');
 Route::post('/cart','CartController@add')->name('cart.add');
 Route::get('/cart/details','CartController@details')->name('cart.details');
 Route::delete('/cart/{id}','CartController@delete')->name('cart.delete');
+
+
+
+
 Route::group(['prefix' => 'wishlist'],function()
 {
     Route::get('/','WishListController@index')->name('wishlist.index');
@@ -39,3 +44,5 @@ Route::group(['prefix' => 'wishlist'],function()
     Route::get('/details','WishListController@details')->name('wishlist.details');
     Route::delete('/{id}','WishListController@delete')->name('wishlist.delete');
 });
+
+Route::get('/brandsfooter', 'navController@brandsfooter')->name('brandsfooter');

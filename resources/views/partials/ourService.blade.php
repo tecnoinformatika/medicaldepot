@@ -15,7 +15,7 @@
                         <div class="col-md-3">
                             <div class="service-medical">
                                 <div class="text-center">
-                                    <img src="assets/images/support/microscope.png" alt="">
+                                    <i class="fa fa-stethoscope fa-5x strong-red" aria-hidden="true"></i>
                                 </div>
                                 <h2>Latest Medical Tech</h2>
                                 <p>We strive to keep our supply up to date</p>
@@ -27,7 +27,8 @@
                         <div class="col-md-3">
                             <div class="service-medical">
                                 <div class="text-center">
-                                    <img src="assets/images/support/stethoscope.png" alt="">
+                                  
+                                  <i class="fa fa-user-md fa-5x strong-red" aria-hidden="true"></i>
                                 </div>
                                 <h2>Huge Supply</h2>
                                 <p>Over 8,000 Medical Supplies and Equipment</p>
